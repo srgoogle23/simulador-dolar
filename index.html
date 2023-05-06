@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="icon" href="favicon-32x32.png">
+    <title>Simulador compra em dólar usando o cartão de crédito</title>
+  </head>
+  <body>
+    <div class="container p60">
+        <div id="loading"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-center violet">Simulador compra em dólar usando o cartão de crédito</h4>
+                    <div class="form-group">
+                      <p><input class="form-control form-control-lg" type="text" id="dolar" placeholder="Valor da compra em dólar" /></p>
+                      <p><input class="form-control form-control-lg" type="text" id="total" disabled placeholder="R$" />
+                      <small class="">O valor simulado já é o total que virá na fatura, incluindo IOF e spread.</small></p>
+                      <p><button type="button" class="btn btn-primary btn-lg" id="calculate-btn">Calcular</button></p>
+                    </div>
+                    <hr/>
+                    <div class="card mbottom10" id="dolarInfo">
+                      <div class="card-header">Dólar</div>
+                      <div class="card-body">
+                        <p><strong>Data e hora da cotação do dólar: </strong><span id="data"></span></p>
+                        <p><strong>Cotação de compra: </strong><span id="compra"></span></p>
+                        <p><strong>Cotação de venda: </strong><span id="venda"></span></p>
+                      </div>
+                      
+                    </div>
+                    <div class="card" id="dolarInfo">
+                      <div class="card-header">Quais as taxas cobradas usando o cartão de crédito?</div>
+                      <div class="card-body">
+                        <p><strong>Taxa de spread: </strong><span>4%</span></p>
+                        <p><strong>IOF (atualizado 2023): </strong><span>5.38%</span></p>
+						<small class="">Valores referentes ao Nubank.</small></p>
+                      </div>
+                      
+                    </div>
+                </div>
+              </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
+    <script src="functions.js"></script>
+  </body>
+</html>
