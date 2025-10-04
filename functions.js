@@ -13,7 +13,7 @@ const getData = async () => {
     let o = $("#dolar").val() * a[0].cotacaoVenda,
         c = o / 100 * 4,
         r = o + c,
-        n = (r / 100 * 5.38 + r).toLocaleString("pt-BR", {
+        n = (r / 100 * 3.5 + r).toLocaleString("pt-BR", {
             minimumFractionDigits: 2,
             style: "currency",
             currency: "REA"
